@@ -1,10 +1,14 @@
 import AppSeguro from "./components/AppSeguro";
+import {CotizadorProvider} from "./context/CotizadorProvider";
+
 
 function App() {
   
-
+  
   return (
-    <AppSeguro />
+    <CotizadorProvider>
+      <AppSeguro />
+    </CotizadorProvider>
   )
 }
 
